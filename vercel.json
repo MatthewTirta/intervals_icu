@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/mcp/:token", "destination": "/api/mcp?token=:token" },
+    { "source": "/", "destination": "/api/health" }
+  ],
+  "functions": { "api/*.js": { "maxDuration": 30 } }
+}
